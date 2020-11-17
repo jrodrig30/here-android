@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="br.unisc.pdm.trabalho.view.ReportNotAttendanceActivity">
+
+    <item
+        android:id="@+id/action_generate_report_not_attendance"
+        android:title="@string/action_generate_report_attendance"
+        android:icon="@drawable/ic_menu_send"
+        android:orderInCategory="900"
+        app:showAsAction="always" />
+
+</menu>

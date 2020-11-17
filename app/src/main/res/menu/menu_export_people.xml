@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="br.unisc.pdm.trabalho.view.ExportPeopleActivity">
+
+    <item
+        android:id="@+id/action_export_people"
+        android:title="@string/action_export_people"
+        android:icon="@drawable/ic_menu_send"
+        android:orderInCategory="900"
+        app:showAsAction="always" />
+
+
+</menu>

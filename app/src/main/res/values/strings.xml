@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <string name="app_name">Event Manager</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_send_mail">Enviar por e-mail</string>
+
+    <!-- Menu -->
+    <string name="menu_event">Events</string>
+    <string name="menu_person">People</string>
+    <string name="menu_register_attendance">Register Attendances</string>
+    <string name="menu_report_attendance">Attendances</string>
+    <string name="menu_report_not_attendance">Not Attendances</string>
+    <string name="menu_qrcode">Generate QRCode</string>
+
+    <!-- STRINGS DE USO GERAL -->
+    <string name="title_search_results">Searching for %1$s</string>
+
+    <string name="action_save">Save</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_delete">Delete</string>
+
+    <string name="label_from_date">From</string>
+    <string name="label_to_date">to</string>
+    <string name="label_to_time">to</string>
+
+    <!-- PESSOAS -->
+
+    <string name="title_person_detail">Person Details</string>
+    <string name="title_create_person">Create Person</string>
+    <string name="title_editing_person">Editing %1$s</string>
+
+    <string name="action_create_person">Create Person</string>
+    <string name="action_search_people">Search People</string>
+
+    <string name="hint_search_people">Search people names</string>
+
+    <string name="toast_person_saved">The person %1$s was saved</string>
+    <string name="toast_person_deleted">The person was deleted</string>
+    <string name="toast_no_person">No person found</string>
+
+    <string name="dialog_confirm_delete_person">Do you really want to delete this person?</string>
+
+    <string name="label_person_name">Full Name</string>
+    <string name="label_person_email">E-mail</string>
+    <string name="label_person_registration_number">Registration Number</string>
+    <string name="label_person_photo">Photo</string>
+
+    <!-- Report Attendance -->
+    <string name="title_activity_report_attendance">Attendance Report</string>
+    <string name="action_generate_report_attendance">Generate Report</string>
+
+    <string name="error_generate_report">Error to generate report</string>
+
+    <!-- Report Not Attendance -->
+    <string name="title_activity_report_not_attendance">Not Attendance Report</string>
+
+    <!-- Register Attendance -->
+    <string name="title_activity_register_event_attendance">Register Attendance</string>
+
+    <string name="label_event_attendance_person">Person</string>
+    <string name="label_event_attendance_event_meeting">Event Meeting</string>
+    <string name="label_event_attendance_check_in">Check In</string>
+    <string name="label_event_attendance_check_out">Check Out</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="select_person">Select a person...</string>
+    <string name="select_event">Select an event...</string>
+    <string name="select_event_meeting">Select an event meeting...</string>
+    <string name="title_activity_test_wifi_p2_p">TestWifiP2P</string>
+
+    <!-- EVENTOS -->
+
+    <string name="title_event_list">Events</string>
+    <string name="title_create_event">Create Event</string>
+    <string name="title_event_detail">Event Detail</string>
+    <string name="title_editing_event">Editing %1$s</string>
+
+    <string name="action_create_event">Create Event</string>
+    <string name="action_search_events">Search Events</string>
+
+    <string name="hint_search_event">Search event names</string>
+
+    <string name="toast_event_saved">The event %1$s was saved</string>
+    <string name="toast_event_deleted">The event was deleted</string>
+    <string name="toast_no_events">No events found</string>
+
+    <string name="dialog_confirm_delete_event">Do you really want to delete this event?</string>
+
+    <string name="label_event_name">Event Name</string>
+    <string name="label_event_period">Event Period</string>
+    <string name="label_event_start_date">Start Date</string>
+    <string name="label_event_end_date">End Date</string>
+    <string name="label_event_description">Description</string>
+    <string name="label_event_meetings">Meetings</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+    <string name="title_activity_qrcode">Generate QRCode</string>
+    <string name="chooser_email">Send E-mail Using</string>
+    <string name="toast_no_qrcode">No QR Code generated</string>
+    <string name="title_activity_export_people">ExportPeopleActivity</string>
+    <string name="title_activity_importer">ImporterActivity</string>
+
+    <string name="action_import_people">Import people</string>
+    <string name="prompt_url">Digite uma URL</string>
+    <string name="action_export_people">Exportar Pessoas</string>
+</resources>

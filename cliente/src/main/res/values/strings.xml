@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Registrar Presença</string>
+    <string name="title_activity_user_info">Meus Dados</string>
+    <string name="title_activity_qrcode">Leitor QR Code</string>
+
+    <string name="action_profile">Meus Dados</string>
+    <string name="hint_registration_id">Matrícula</string>
+    <string name="help_qrcode_scanner">Use o leitor de QR Code para confirmar a presença em um evento.</string>
+    <string name="read_qrcode">Ler QR Code</string>
+    <string name="save_reg_number">Salvar</string>
+    <string name="toast_reg_number_saved">Matrícula salva com sucesso</string>
+    <string name="toast_reg_number_save_error">Erro ao salvar a matrícula</string>
+    <string name="toast_error_no_network">Sem conexão com a internet</string>
+    <string name="label_registration_number">Matrícula</string>
+</resources>

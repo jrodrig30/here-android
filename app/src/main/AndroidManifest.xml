@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.unisc.pdm.trabalho"
+    android:installLocation="auto" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- Teste Wifi -->
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE"
+        android:required="true" />
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE"
+        android:required="true" />
+    <uses-permission
+        android:name="android.permission.INTERNET"
+        android:required="true" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.unisc.pdm.trabalho.MainActivity" />
+        </activity>
+        <activity
+            android:name=".view.person.PersonListActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/people_search" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.unisc.pdm.trabalho.MainActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.person.PersonDetailActivity"
+            android:label="@string/title_person_detail"
+            android:parentActivityName=".view.person.PersonListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.person.PersonListActivity" />
+        </activity>
+        <activity
+            android:name=".view.person.PersonEditActivity"
+            android:label="@string/title_create_person"
+            android:parentActivityName=".view.person.PersonListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.person.PersonListActivity" />
+        </activity>
+        <activity
+            android:name=".view.ReportAttendanceActivity"
+            android:label="@string/title_activity_report_attendance"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.unisc.pdm.trabalho.MainActivity" />
+        </activity>
+        <activity
+            android:name=".view.ReportNotAttendanceActivity"
+            android:label="@string/title_activity_report_not_attendance"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.unisc.pdm.trabalho.MainActivity" />
+        </activity>
+        <activity
+            android:name=".view.RegisterEventAttendanceActivity"
+            android:label="@string/title_activity_register_event_attendance"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.unisc.pdm.trabalho.MainActivity" />
+        </activity>
+        <activity
+            android:name=".view.event.EventListActivity"
+            android:label="@string/title_event_list"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/people_search" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.unisc.pdm.trabalho.MainActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.event.EventDetailActivity"
+            android:label="@string/title_event_detail"
+            android:parentActivityName=".view.event.EventListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.event.EventListActivity" />
+        </activity>
+        <activity
+            android:name=".view.event.EventEditActivity"
+            android:label="@string/title_create_event"
+            android:parentActivityName=".view.event.EventListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.event.EventListActivity" />
+        </activity>
+        <activity
+            android:name=".view.TestWifiP2P"
+            android:label="@string/title_activity_test_wifi_p2_p"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.unisc.pdm.trabalho.MainActivity" />
+        </activity>
+
+        <receiver
+            android:name=".WifiBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true" >
+        </receiver>
+
+        <activity
+            android:name=".view.QRCodeActivity"
+            android:label="@string/title_activity_qrcode"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.unisc.pdm.trabalho.MainActivity" />
+        </activity>
+        <activity
+            android:name=".view.ExportPeopleActivity"
+            android:label="@string/title_activity_export_people"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.unisc.pdm.trabalho.MainActivity" />
+        </activity>
+        <activity
+            android:name=".view.ImporterActivity"
+            android:label="@string/title_activity_importer"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.unisc.pdm.trabalho.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

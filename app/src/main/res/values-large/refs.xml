@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <!--
+    Layout alias to replace the single-pane version of the layout with a
+    two-pane version on Large screens.
+
+    For more on layout aliases, see:
+    http://developer.android.com/training/multiscreen/screensizes.html#TaskUseAliasFilters
+    -->
+    <item type="layout" name="activity_person_list">@layout/activity_person_twopane</item>
+
+    <!-- Quando exibido com dois paineis, o menu precisa conter todos os itens (lista + detalhes) -->
+    <item type="menu" name="menu_person_list">@menu/menu_person_list_twopane</item>
+    <!--
+    Layout alias to replace the single-pane version of the layout with a
+    two-pane version on Large screens.
+
+    For more on layout aliases, see:
+    http://developer.android.com/training/multiscreen/screensizes.html#TaskUseAliasFilters
+    -->
+    <item type="layout" name="activity_event_list">@layout/activity_event_twopane</item>
+
+    <!-- Quando exibido com dois paineis, o menu precisa conter todos os itens (lista + detalhes) -->
+    <item type="menu" name="menu_event_list">@menu/menu_event_list_twopane</item>
+</resources>
